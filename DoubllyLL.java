@@ -138,6 +138,7 @@ class Link
             temp.next.prev = newn;
             newn.prev = temp;
             temp.next = newn;
+            Count++;
 
         }
     }
@@ -171,6 +172,8 @@ class Link
             temdel = temp.next;
             temp.next = temp.next.next;
             temdel=null;
+            
+            Count--;
             
 
         }
